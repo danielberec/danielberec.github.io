@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>Batman Website</title>
+		<script>
+			function verify()
+			{
+				var userName = document.getElementById('userName').value;
+				var userEmail = document.getElementById('userEmail').value;
+
+				alert('Thank you!\nName: '+userName+'\nEmail: '+userEmail)
+			}
+		</script>
+		<style>
+		table {border-collapse:collapse; width:100%;}
+		th {text-align:left; padding:8px;}
+		td {text-align:left; padding:8px;}
+		tr:nth-child(odd) {background-color: rgb(231,232,234);}
+		h2 {
+			color:blue;
+			background-color:lightblue;
+			font-family:georgia;
+			width:50%;
+		}
+		p {
+			color:black;
+			font-size:16;
+		}
+		img {
+			float:right;
+		}
+		</style>
+		<h1>Batman</h1>
+	</head>
+	<body>
+		<h2>About</h2>
+		<p>Bla bla!</p>
+		<p>Hi, I'm Batman. I love <span style="color:blue; font-weight:bold;">User Interface Design.</span></p>
+		<h2>Courses</h2>
+		<p>Here are some courses I've taken:</p>
+		<img style="position:right; width:150px; height:150px" src="batman.jpg">
+		<table style="width:50%" border="2">
+			<tr>
+				<th><center>Course Number</center></th>
+				<th><center>Course Title</center></th>
+				<th><center>Semester Taken</center></th>
+			</tr>
+			<tr>
+				<td colspan="3"><center><span style="font-weight:bold">For Credit</span></center></td>
+			</tr>
+			<tr>
+				<th><span style="color: rgb(51,174,255); font-weight:bold;">6.813</span></th>
+				<th><span style="font-weight:normal; color: rgb(51,174,255);">User Interface Design</span></th>
+				<th><span style="font-weight:normal; color: rgb(51,174,255);">Spring 2014</span></th>
+			</tr>
+			<tr>
+				<th><span style="color: rgb(51,174,255); font-weight:bold;">6.034</span></th>
+				<th><span style="font-weight:normal;">Artificial Intelligence</span></th>
+				<th><span style="font-weight:normal;">Fall 2013</span></th>
+			</tr>
+			<tr>
+				<th><span style="color: rgb(51,174,255); font-weight:bold">6.006</span></th>
+				<th><span style="font-weight:normal">Introduction to Algorithms</span></th>
+				<th><span style="font-weight:normal">Fall 2013</span></th>
+			</tr>
+			<tr>
+				<td colspan="3"><center><span style="font-weight:bold; color: black;">Listener</span></center></td>
+			</tr>
+			<tr>
+				<th><span style="color: rgb(51,174,255); font-weight:bold">6.867</span></th>
+				<th><span style="font-weight:normal">Machine Learning</span></th>
+				<th><span style="font-weight:normal">Fall 2013</span></th>
+			</tr>
+			<tr>
+				<th><span style="color: rgb(51,174,255); font-weight:bold">6.830</span></th>
+				<th><span style="font-weight:normal">Database Systems</span></th>
+				<th><span style="font-weight:normal">Fall 2012</span></th>
+			</tr>
+		</table>
+		<h2>Interests</h2>
+		<p>Im an interested in <span style="font-weight:bold; font-stretch:condensed;">HCI</span>, <span style="font-family:comic sans MS">memes</span>, and <a href="https://www.youtube.com"><span style="font-family:Comic sans MS">youtube</span></a> videos.</p>
+		<h2>Subscribe to Newsletter</h2>
+		<p>Would love to receive newsletter. Submit below!</p>
+		Name:<input type="text" id="userName" />
+		<br>Email:<input type="text" id="userEmail"/>
+		<br><button type="button" onclick="verify()">Submit</button>
+	</body>
+</html>

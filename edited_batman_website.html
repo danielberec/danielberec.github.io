@@ -1,0 +1,138 @@
+<html>
+	<head>
+		<title>Edited Batman Website</title>
+		<script>
+			function verify()
+			{
+				var userName = document.getElementById('userName').value;
+				var userEmail = document.getElementById('userEmail').value;
+
+				alert('Thank you '+userName+'. I will get back to you as soon as possible.')
+			}
+		</script>
+		<style>
+		table {border-collapse:collapse; width:100%;}
+		th {text-align:left; padding:8px;}
+		td {text-align:left; padding:8px;}
+		tr:nth-child(odd) {background-color: rgb(231,232,234);}
+		h2 {
+			color:maroon;
+			background-color:lightblue;
+			font-family:georgia;
+			width:70%;
+		}
+		p {
+			color:black;
+			font-size:16;
+		}
+		img {
+			float:right;
+		}
+		</style>
+		<h1>Daniel Berec</h1>
+	</head>
+	<body>
+		<h2>About</h2>
+		<p>Hi, I'm Daniel. I'm a student at York University.</p>
+		<h2>Courses</h2>
+		<p>Here are some courses I've taken:</p>
+		<img style="position:right; width:30%;" src="2018ram1500sport.jpg">
+		<table style="width:70%" border="2">
+			<td colspan="3"><center><span style="color:black; font-weight:bold;">Geomatics Related Courses</span></center></td>
+			<tr>
+				<th><center>Course Code</center></th>
+				<th><center>Course Name</center></th>
+				<th><center>Semester Taken</center></th>
+			</tr>
+			<tr>
+				<td>ESSE 2620</td>
+				<td>Fundamentals of Surveying</td>
+				<td>Fall 2016</td>
+			</tr>
+			<tr>
+				<td>ESSE 2615</td>
+				<td>Fundamentals of Geomatics</td>
+				<td>Winter 2017</td>
+			</tr>
+			<tr>
+				<td>ESSE 3620</td>
+				<td>Adjustment Calculus</td>
+				<td>Fall 2017</td>
+			</tr>
+			<tr>
+				<td>ESSE 3630</td>
+				<td>Overdetermined Systems</td>
+				<td>Winter 2018</td>
+			</tr>
+			<tr>
+				<td>ESSE 3640</td>
+				<td>Geodetic Surveys</td>
+				<td>Winter 2018</td>
+			</tr>
+			<tr>
+				<td>ESSE 3650</td>
+				<td>Photogrammetry</td>
+				<td>Winter 2018</td>
+			</tr>
+			<tr>
+				<td>ESSE 4610</td>
+				<td>Global Positioning Systems</td>
+				<td>Winter 2018</td>
+			</tr>
+			<tr>
+				<td>ESSE 4630</td>
+				<td>Image Processing</td>
+				<td>Fall 2018</td>
+			</tr>
+			<tr>
+				<td>ESSE 4640</td>
+				<td>Digital Terrain Modeling</td>
+				<td>Fall 2018</td>
+			</tr>
+			<tr>
+				<td>ESSE 4660</td>
+				<td>Survey Law 1</td>
+				<td>Fall 2018</td>
+			</tr>
+			<tr>
+				<td>ESSE 4690</td>
+				<td>Advanced 3D Geospatial Techniques</td>
+				<td>Fall 2018</td>
+			</tr>
+			<tr>
+				<td>ESSE 4630</td>
+				<td>Image Processing</td>
+				<td>Fall 2018</td>
+			</tr>
+			<tr>
+				<td>ESSE 4600</td>
+				<td>GIS II</td>
+				<td>Winter 2019</td>
+			</tr>
+			<tr>
+				<td>ESSE 4620</td>
+				<td>Physical and Space Geodesy</td>
+				<td>Winter 2019</td>
+			</tr>
+			<tr>
+				<td>ESSE 4650</td>
+				<td>Hydrohraphy</td>
+				<td>Winter 2019</td>
+			</tr>
+			<tr>
+				<td>ESSE 4670</td>
+				<td>Survey Law 2</td>
+				<td>Winter 2019</td>
+			</tr>
+			
+	
+		</table>
+		<h2>Interests</h2>
+		<p>Im an interested in cars, trucks, and the outdoors.</p>
+		<h2>Contact</h2>
+		<p>Have any questions regarding myself? Reach out to me!</p>
+		Name:<input type="text" id="userName" />
+		<br>Email:<input type="text" id="userEmail"/>
+		<br><button type="button" onclick="verify()">Submit</button>
+	</body>
+</html>
